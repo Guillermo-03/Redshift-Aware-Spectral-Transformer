@@ -1,14 +1,14 @@
 SPECTRUM_LEN = 7081
-PADDED_LEN = 7084       # pad to nearest multiple of PATCH_SIZE
+PADDED_LEN = 7084
 PATCH_SIZE = 28
-N_PATCHES = 253         # 7084 / 28
+N_PATCHES = 253
 
 D_MODEL = 384
 N_HEADS = 8
 N_LAYERS = 8
 D_FFN = 1536
 
-MAX_SEQ_LEN = 255       # 1 [CLS] + 1 [Z_MASK] + 253 patch tokens
+MAX_SEQ_LEN = 255
 MASK_RATIO = 0.25
 LAMBDA_REDSHIFT = 5.0
 
