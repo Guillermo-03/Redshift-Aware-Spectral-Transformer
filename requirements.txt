@@ -1,0 +1,6 @@
+torch>=2.2.0
+numpy>=1.26.0
+h5py>=3.10.0
+astropy>=6.0.0
+datasets>=2.18.0
+tqdm>=4.66.0

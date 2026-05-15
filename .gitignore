@@ -216,3 +216,42 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# Project-specific: astrophysics spectra / ML training outputs
+# ============================================================
+
+# Large scientific data files
+*.fits
+*.fits.gz
+*.npy
+*.npz
+*.parquet
+*.csv
+*.h5
+*.hdf5
+
+# Model checkpoints / weights
+checkpoints/*
+!checkpoints/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Downloaded spectra data (keep directory, ignore contents)
+data/*
+!data/.gitkeep
+
+# Training outputs
+outputs/
+logs/
+
+# Local editor / OS files
+.DS_Store
+
+# Claude / Codex local files
+CLAUDE.md
+.claude/settings.local.json
+.codex/
+

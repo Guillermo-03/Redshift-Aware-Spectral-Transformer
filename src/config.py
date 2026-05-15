@@ -1,0 +1,20 @@
+SPECTRUM_LEN = 7081
+PADDED_LEN = 7084       # pad to nearest multiple of PATCH_SIZE
+PATCH_SIZE = 28
+N_PATCHES = 253         # 7084 / 28
+
+D_MODEL = 384
+N_HEADS = 8
+N_LAYERS = 8
+D_FFN = 1536
+
+MAX_SEQ_LEN = 255       # 1 [CLS] + 1 [Z_MASK] + 253 patch tokens
+MASK_RATIO = 0.25
+LAMBDA_REDSHIFT = 5.0
+
+BATCH_SIZE = 64
+LR = 3e-4
+EPOCHS = 50
+WARMUP_EPOCHS = 5
+CHECKPOINT_DIR = "checkpoints"
+DATA_DIR = "data"
