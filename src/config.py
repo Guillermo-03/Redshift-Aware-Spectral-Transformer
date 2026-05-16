@@ -3,10 +3,10 @@ PADDED_LEN = 7784       # 278 × 28
 PATCH_SIZE = 28
 N_PATCHES = 278         # 7784 / 28
 
-D_MODEL = 384
+D_MODEL = 512
 N_HEADS = 8
-N_LAYERS = 8
-D_FFN = 1536
+N_LAYERS = 11
+D_FFN = 2048
 
 MAX_SEQ_LEN = 280       # 1 [CLS] + 1 [Z_MASK] + 278 patch tokens
 MASK_RATIO = 0.25
